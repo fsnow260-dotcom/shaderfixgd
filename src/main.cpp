@@ -31,7 +31,7 @@ class $modify(ShaderLayer) {
 
         // camera rotation fix
         CCNode* robTopsEpicNode = m_state.m_blurRefChannel < 2 ?
-            m_gameLayer->m_unknownE90 : m_gameLayer->m_unknownE98;
+            m_gameLayer->m_shaderLayer : m_gameLayer->m_shaderLayer2;
         float rot = robTopsEpicNode->getRotation();
         robTopsEpicNode->setRotation(0.f);
 
